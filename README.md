@@ -21,12 +21,33 @@ The framework of our M-TBNE includes TBNE and [TBNE](https://github.com/maryqizh
 </div>
 
 # Installation
+- docker configuration
+```
+docker login --username=mckinleylu registry.cn-hangzhou.aliyuncs.com 
+docker pull registry.cn-hangzhou.aliyuncs.com/attrisocialnetwork/tasn:latest
+docker run --gpus all -itd --name UAI -p 2020:2020 registry.cn-hangzhou.aliyuncs.com/attrisocialnetwork/tasn
+docker exec -it UAI bash
+cd usr
+mkdir project
+cd project
+git clone --recursive https://github.com/microsoft/Graphormer.git
+```
+- conda configuration
+```
+conda create -n P1 python=3.9
+conda activate P1
+cd Graphormer
+python -m pip install --upgrade "pip==21.1"
+bash install.sh
+```
+- requirement configuration
+```
 cd /Graphormer1/Graphormer/examples/property_prediction
 bash test.sh
+```
 
 # Reference
 If you find our codes useful, please consider citing our work
-
 ```
 @inproceedings{
 kun2024transformer,
