@@ -15,7 +15,7 @@ The framework of our M-TBNE includes shown in ![Figure](./TBNE.png)   and TBNE b
 - We then extend the self-attention module of Transformer to generate node embeddings by incorporating node importance and shortest path encodings, such the node attributes and structural relations in the BWGs could be captured.
 - We finally perform multiple probabilistic inferences by calculating the embedding similarities, where each probabilistic inference is viewed as finding the shortest path from evidence nodes to query nodes by the decoding information principle.
 <center class ='img'>
-<img title="XX" src="./fig1_BNTransformer_3.pdf" width="45%">
+<img title="XX" src="./TBNE.png" width="50%">
 </center>
 
 # Reference
