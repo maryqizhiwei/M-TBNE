@@ -32,7 +32,7 @@ title={Transformer Based Bayesian Network Embedding for Efficient Multiple Proba
 author={Kun Yue and Zhiwei Qi and Zhu Yang and Liang Duan},
 booktitle={33rd ACM International Conference on Information and Knowledge Management},
 year={2024},
-```
 url={https://doi.org/10.1145/3627673.3679860}
 }
-
+```
+Kun Yue, Zhiwei Qi, Zhu Yang, Liang Duan. Transformer based Bayesian network embedding for efficient multiple probabilistic inferences. In Proceeding of the 33rd ACM International Conference on Information and Knowledge Management, 2024, doi: [10.1145/3627673.3679860](https://doi.org/10.1145/3627673.3679860).
