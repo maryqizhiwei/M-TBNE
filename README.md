@@ -26,7 +26,7 @@ The framework of our M-TBNE includes shown in [Figure](https://github.com/maryqi
 # Reference
 If you find our codes useful, please consider citing our work
 
-@inproceedings{
+  @inproceedings{
 kun2024transformer,
 title={Transformer Based Bayesian Network Embedding for Efficient Multiple Probabilistic Inferences},
 author={Kun Yue and Zhiwei Qi and Zhu Yang and Liang Duan},
