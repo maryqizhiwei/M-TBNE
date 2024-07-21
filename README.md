@@ -46,7 +46,7 @@ pip install requirement.txt
 cd /Graphormer1/Graphormer/examples/property_prediction
 bash test.sh
 ```
- download [requirement.txt](https://github.com/maryqizhiwei/M-TBNE/blob/main/requirement.txt)
+  Download [requirement.txt](https://github.com/maryqizhiwei/M-TBNE/blob/main/requirement.txt)
 
 # Reference
 If you find our codes useful, please consider citing our work
