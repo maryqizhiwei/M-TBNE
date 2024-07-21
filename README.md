@@ -14,9 +14,9 @@ The framework of our M-TBNE includes shown in [Figure](https://github.com/maryqi
 - We first construct the BWGs from a BN by calculating the mutual information of each node pair as the edge weight. To calculate the mutual information efficiently, we adopt FS to generate simulated samples from the given BN and count the eligible simulated samples.
 - We then extend the self-attention module of Transformer to generate node embeddings by incorporating node importance and shortest path encodings, such the node attributes and structural relations in the BWGs could be captured.
 - We finally perform multiple probabilistic inferences by calculating the embedding similarities, where each probabilistic inference is viewed as finding the shortest path from evidence nodes to query nodes by the decoding information principle.
-- 
+
 <center class ='img'>
-<img title="TBNE" src="./TBNE.png" width="50%">
+<img title="TBNE" src="./TBNE.png" width="80%">
 </center>
 
 # Reference
