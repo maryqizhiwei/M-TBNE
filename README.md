@@ -24,7 +24,6 @@ The framework of our M-TBNE includes shown in [Figure](https://github.com/maryqi
 
 # Reference
 If you find our codes useful, please consider citing our work
-
 ```
 @inproceedings{
 kun2024transformer,
