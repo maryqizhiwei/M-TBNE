@@ -1,0 +1,94 @@
+network net {
+}
+variable amenities {
+  type discrete [ 2 ] { lots, little };
+}
+variable neighborhood {
+  type discrete [ 2 ] { bad, good };
+}
+variable location {
+  type discrete [ 3 ] {good, bad, ugly };
+}
+variable children {
+  type discrete [ 2 ] { bad, good };
+}
+variable size {
+  type discrete [ 3 ] { small, medium, large };
+}
+variable schools {
+  type discrete [ 2 ] { bad, good };
+}
+variable age {
+  type discrete [ 2 ] { old, new };
+}
+variable price {
+  type discrete [ 3 ] { cheap, ok, expensive };
+}
+probability ( amenities ) {
+  table 0.3, 0.7;
+}
+probability ( location | amenities, neighborhood ) {
+  (lots, bad) 0.3, 0.4, 0.3;
+  (lots, good) 0.8, 0.15, 0.05;
+  (little, bad) 0.2, 0.4, 0.4;
+  (little, good) 0.5, 0.35, 0.15;
+}
+probability ( neighborhood ) {
+  table 0.4, 0.6;
+}
+probability ( children | neighborhood ) {
+  (bad) 0.6, 0.4;
+  (good) 0.3, 0.7;
+}
+probability ( age | location ) {
+  (good) 0.3, 0.7;
+  (bad) 0.6, 0.4;
+  (ugly) 0.9, 0.1;
+}
+probability ( size ) {
+  table 0.33, 0.34, 0.33;
+}
+probability ( schools | children ) {
+  (bad) 0.7, 0.3;
+  (good) 0.8, 0.2;
+}
+probability ( price | location, age, schools, size ) {
+  (good, old, bad ,small) 0.5, 0.4, 0.1;
+  (good, old, bad ,medium) 0.4, 0.45, 0.15;
+  (good, old, bad ,large) 0.35, 0.45, 0.2;
+  (good, old, good ,small) 0.4, 0.3, 0.3;
+  (good, old, good ,medium) 0.35, 0.3, 0.35;
+  (good, old, good ,large) 0.3, 0.25, 0.45;
+  (good, new, bad ,small) 0.45, 0.4, 0.15;
+  (good, new, bad ,medium) 0.4, 0.45, 0.15;
+  (good, new, bad ,large) 0.35, 0.45, 0.2;
+  (good, new, good ,small) 0.25, 0.3, 0.45; 
+  (good, new, good ,medium) 0.2, 0.25, 0.55;
+  (good, new, good ,large) 0.1, 0.2, 0.7;
+  (bad, old, bad ,small) 0.7, 0.299, 0.001;
+  (bad, old, bad ,medium) 0.65, 0.33, 0.02;
+  (bad, old, bad ,large) 0.65, 0.32, 0.03;
+  (bad, old, good ,small) 0.55, 0.35, 0.1;
+  (bad, old, good ,medium) 0.5, 0.35, 0.15;
+  (bad, old, good ,large) 0.45, 0.4, 0.15;
+  (bad, new, bad ,small) 0.6, 0.35, 0.05;
+  (bad, new, bad ,medium) 0.55, 0.35, 0.1;
+  (bad, new, bad ,large) 0.5, 0.4, 0.1;
+  (bad, new, good ,small) 0.4, 0.4, 0.2;
+  (bad, new, good ,medium) 0.3, 0.4, 0.3;
+  (bad, new, good ,large) 0.3, 0.3, 0.4;
+  (ugly, old, bad ,small) 0.8, 0.1999, 0.0001;
+  (ugly, old, bad ,medium) 0.75, 0.24, 0.01;
+  (ugly, old, bad ,large) 0.75, 0.23, 0.02;
+  (ugly, old, good ,small) 0.65, 0.3, 0.05;
+  (ugly, old, good ,medium) 0.6, 0.33, 0.07;
+  (ugly, old, good ,large) 0.55, 0.37, 0.08;
+  (ugly, new, bad ,small) 0.7, 0.27, 0.03;
+  (ugly, new, bad ,medium) 0.64, 0.3, 0.06;
+  (ugly, new, bad ,large) 0.61, 0.32, 0.07;
+  (ugly, new, good ,small) 0.48, 0.42, 0.1;
+  (ugly, new, good ,medium) 0.41, 0.39, 0.2;
+  (ugly, new, good ,large) 0.37, 0.33, 0.3;
+}
+
+

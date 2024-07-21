@@ -1,0 +1,14 @@
+    python evaluate.py \
+    --user-dir ../../graphormer \
+    --num-workers 4 \
+    --ddp-backend=legacy_ddp \
+    --dataset-name my_dataset \
+    --user-data-dir ../../examples/customized_dataset \
+    --task graph_prediction \
+    --criterion   l1_loss \
+    --arch graphormer_slim \
+    --num-classes  1\
+    --batch-size 12 \
+    --save-dir ../../examples/property_prediction/ckpts25\
+    --split valid \
+    --metric mae \
