@@ -10,7 +10,7 @@ Our contributions are summarized as follows:
 - We present experimental results that our inference method is much faster than the state-of-the-art competitors, while maintaining almost the same results.
 
   
-The framework of our M-TBNE includes shown in ![Figure](./fig1_BNTransformer_3.pdf)   and TBNE based multiple probabilistic inferences.
+The framework of our M-TBNE includes shown in ![Figure](./TBNE.png)   and TBNE based multiple probabilistic inferences.
 - We first construct the BWGs from a BN by calculating the mutual information of each node pair as the edge weight. To calculate the mutual information efficiently, we adopt FS to generate simulated samples from the given BN and count the eligible simulated samples.
 - We then extend the self-attention module of Transformer to generate node embeddings by incorporating node importance and shortest path encodings, such the node attributes and structural relations in the BWGs could be captured.
 - We finally perform multiple probabilistic inferences by calculating the embedding similarities, where each probabilistic inference is viewed as finding the shortest path from evidence nodes to query nodes by the decoding information principle.
