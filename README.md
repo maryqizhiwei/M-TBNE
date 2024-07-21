@@ -30,8 +30,8 @@ kun2024transformer,
 title={Transformer Based Bayesian Network Embedding for Efficient Multiple Probabilistic Inferences},
 author={Kun Yue and Zhiwei Qi and Zhu Yang and Liang Duan},
 booktitle={33rd ACM International Conference on Information and Knowledge Management},
-year={2024},```
-
+year={2024},
+```
 url={https://doi.org/10.1145/3627673.3679860}
 }
 
