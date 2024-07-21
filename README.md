@@ -41,6 +41,7 @@ python -m pip install --upgrade "pip==21.1"
 bash install.sh
 ```
 - requirement configuration
+
 [requirement.txt](https://github.com/maryqizhiwei/M-TBNE/blob/main/requirement.txt)
 ```
 pip install requirement.txt
