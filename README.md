@@ -10,19 +10,29 @@ Our contributions are summarized as follows:
 - We present experimental results that our inference method is much faster than the state-of-the-art competitors, while maintaining almost the same results.
 
   
-The framework of our M-TBNE includes shown in Figure   and TBNE based multiple probabilistic inferences.
+The framework of our M-TBNE includes shown in ![Figure](.\fig1_BNTransformer_3.pdf)   and TBNE based multiple probabilistic inferences.
 - We first construct the BWGs from a BN by calculating the mutual information of each node pair as the edge weight. To calculate the mutual information efficiently, we adopt FS to generate simulated samples from the given BN and count the eligible simulated samples.
 - We then extend the self-attention module of Transformer to generate node embeddings by incorporating node importance and shortest path encodings, such the node attributes and structural relations in the BWGs could be captured.
 - We finally perform multiple probabilistic inferences by calculating the embedding similarities, where each probabilistic inference is viewed as finding the shortest path from evidence nodes to query nodes by the decoding information principle.
-  ![Framework of TBNE](https://github.com/maryqizhiwei/M-TBNE/blob/main/fig1_BNTransformer_3.pdf)
+<center class ='img'>
+<img title="XX" src=".\fig1_BNTransformer_3.pdf" width="45%">
+</center>
 
 # Reference
 If you find our codes useful, please consider citing our work
+
 @inproceedings{
+
 kun2024transformer,
+
 title={Transformer Based Bayesian Network Embedding for Efficient Multiple Probabilistic Inferences},
+
 author={Kun Yue and Zhiwei Qi and Zhu Yang and Liang Duan},
+
 booktitle={33rd ACM International Conference on Information and Knowledge Management},
+
 year={2024},
+
 url={https://doi.org/10.1145/3627673.3679860}
+
 }
